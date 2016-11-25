@@ -102,7 +102,8 @@ ul li {
     -webkit-transition: padding 0.3s;
     transition: padding 0.3s; }
   #header .logo {
-    float: left; }
+    float: left;
+}
 
 #header.fixed {
   background-color: #292c47; }
