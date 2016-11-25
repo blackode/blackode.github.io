@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Design Portfolio</title>
+        <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+
+    </head>
+    <body>
+        <div id="blueimp-gallery" class="blueimp-gallery">
+            <div class="slides"></div>
+            <h3 class="title"></h3>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <a class="close">×</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
+        </div>
+        <div id="links">
+            <a href="#" title="Banana">
+                <img src="images/logos/logo (1).png" alt="Banana">
+            </a>
+            <a href="#" title="Apple">
+                <img src="images/logos/logo (2).png" alt="Apple">
+            </a>
+            <a href="#" title="Orange">
+                <img src="images/logos/logo (3).png" alt="Orange">
+            </a>
+        </div>
+
+        <!-- External Scripts -->
+        <script src="js/blueimp-gallery.min.js"></script>
+        <script>
+            document.getElementById('links').onclick = function (event) {
+                event = event || window.event;
+                var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = {index: link, event: event},
+                links = this.getElementsByTagName('a');
+                blueimp.Gallery(links, options);
+
+            };
+        </script>
+    </body>
+</html>
