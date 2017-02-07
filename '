@@ -26,10 +26,7 @@
         <section class="banner" role="banner">
             <header id="header">
                 <div class="header-content clearfix">
-                    <a class="logo" href="#">
-                        <!-- <img src="images/logo.png" alt="" height=100px width=200px style="margin-top:-45px;"> -->
-                        <h4>ANKANNA</h4>
-                    </a>
+                    <a class="logo" href="#"><img src="images/logo.png" alt="" height=100px width=200px style="margin-top:-45px;"></a>
                     <nav class="navigation" role="navigation">
                         <ul class="primary-nav">
                             <li><a href="#codearmor">Code Armor</a></li>
@@ -271,7 +268,7 @@
                 <h2 class='text-center'>Adobe Stack Techs</h2>
                             <div class="container">
                                 <div class=" row text-center">
-                                <div class="col-md-3 text-center wow slideInLeft">
+                                <div class="col-md-3 text-center">
                                 <br/>
                                     <img src="images/adobe/ai_black.png" alt=" illustrator - icon"/>
                                     <hr/>
@@ -279,7 +276,7 @@
                                     <h4>Logo Designing</h4>
                                 </div>
 
-                                <div class="col-md-3 text-center wow slideInDown">
+                                <div class="col-md-3 text-center">
                                 <br/>
                                     <img src="images/adobe/ps_black.png" alt=" photoshop - icon"/>
                                     <hr/>
@@ -287,7 +284,7 @@
                                     <h4>Photo Manipulation</h4>
                                 </div>
 
-                                <div class="col-md-3 text-center wow slideInDown">
+                                <div class="col-md-3 text-center">
                                 <br/>
                                     <img src="images/adobe/pr_black.png" alt=" Premier - icon"/>
                                     <hr/>
@@ -295,7 +292,7 @@
                                     <h4>Video Editing</h4>
                                 </div>
 
-                                <div class="col-md-3 text-center wow slideInRight">
+                                <div class="col-md-3 text-center">
                                 <br/>
                                     <img src="images/adobe/ae_black.png" alt=" Premier - icon"/>
                                     <hr/>
