@@ -32,8 +32,11 @@
       gtag('config', 'UA-147058763-1');
     </script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-
-
+    <meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  	<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  	<link href='dist/simplelightbox.min.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <section class="banner" role="banner">
@@ -66,10 +69,37 @@
                     > fótboltaiðkandi <br />
                     > tölvuhvíslari
                     </p>
+
                 </div><!-- banner text -->
             </div>
         </div>
     </section><!-- banner -->
+
+    <section id="gallery test"  class="section teams">
+      <div class="container">
+    		<h1 class="align-center">Simple Lightbox Demo Page</h1>
+    		<div class="gallery">
+    			<a href="images/image1.jpg" class="big"><img src="images/thumbs/thumb1.jpg" alt="" title="Beautiful Image" /></a>
+    			<a href="images/image2.jpg"><img src="images/thumbs/thumb2.jpg" alt="" title=""/></a>
+    			<a href="images/image3.jpg"><img src="images/thumbs/thumb3.jpg" alt="" title="Beautiful Image"/></a>
+    			<a href="images/image4.jpg"><img src="images/thumbs/thumb4.jpg" alt="" title=""/></a>
+    			<div class="clear"></div>
+
+    			<a href="images/image5.jpg"><img src="images/thumbs/thumb5.jpg" alt="" title=""/></a>
+    			<a href="images/image6.jpg"><img src="images/thumbs/thumb6.jpg" alt="" title=""/></a>
+    			<a href="images/image7.jpg" class="big"><img src="images/thumbs/thumb7.jpg" alt="" title=""/></a>
+    			<a href="images/image8.jpg"><img src="images/thumbs/thumb8.jpg" alt="" title=""/></a>
+    			<div class="clear"></div>
+
+    			<a href="images/image9.jpg" class="big"><img src="images/thumbs/thumb9.jpg" alt="" title=""/></a>
+    			<a href="images/image10.jpg"><img src="images/thumbs/thumb10.jpg" alt="" title=""/></a>
+    			<a href="images/image11.jpg"><img src="images/thumbs/thumb11.jpg" alt="" title=""/></a>
+    			<a href="images/image12.jpg"><img src="images/thumbs/thumb12.jpg" alt="" title=""/></a>
+    			<div class="clear"></div>
+
+    		</div>
+    </section>
+
     <section id="everkefni" class="section teams">
       <h2 class='text-center'>Einstaklingsverkefni</h2>
         <div class="container">
@@ -394,6 +424,55 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-147058763-1');
 ga('send', 'pageview');
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="dist/simple-lightbox.js"></script>
+    <script>
+    	$(function(){
+    		var $gallery = $('.gallery a').simpleLightbox();
+
+    		$gallery.on('show.simplelightbox', function(){
+    			console.log('Requested for showing');
+    		})
+    		.on('shown.simplelightbox', function(){
+    			console.log('Shown');
+    		})
+    		.on('close.simplelightbox', function(){
+    			console.log('Requested for closing');
+    		})
+    		.on('closed.simplelightbox', function(){
+    			console.log('Closed');
+    		})
+    		.on('change.simplelightbox', function(){
+    			console.log('Requested for change');
+    		})
+    		.on('next.simplelightbox', function(){
+    			console.log('Requested for next');
+    		})
+    		.on('prev.simplelightbox', function(){
+    			console.log('Requested for prev');
+    		})
+    		.on('nextImageLoaded.simplelightbox', function(){
+    			console.log('Next image loaded');
+    		})
+    		.on('prevImageLoaded.simplelightbox', function(){
+    			console.log('Prev image loaded');
+    		})
+    		.on('changed.simplelightbox', function(){
+    			console.log('Image changed');
+    		})
+    		.on('nextDone.simplelightbox', function(){
+    			console.log('Image changed to next');
+    		})
+    		.on('prevDone.simplelightbox', function(){
+    			console.log('Image changed to prev');
+    		})
+    		.on('error.simplelightbox', function(e){
+    			console.log('No image found, go to the next/prev');
+    			console.log(e);
+    		});
+    	});
     </script>
 </body>
 </html>
