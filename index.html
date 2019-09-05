@@ -75,49 +75,51 @@
         </div>
     </section><!-- banner -->
 
-<section id="test fancybox" class="section teams">
-  <h2>fancyBox v3.2 - Quick product view</h2>
+<section id="everkefni" class="section teams">
+  <h2 class="text-center">Einstaklingsverkefni</h2>
+  <div class="container">
+  <div class="row">
+      <div class="product">
+        <a href="https://source.unsplash.com/fZ8uf_L52wg/832x1200" data-fancybox="quick-view-1" data-type="image">
+          <img src="https://source.unsplash.com/fZ8uf_L52wg/208x300" />
+        </a>
 
-  <div class="product">
-    <a href="https://source.unsplash.com/fZ8uf_L52wg/832x1200" data-fancybox="quick-view-1" data-type="image">
-      <img src="https://source.unsplash.com/fZ8uf_L52wg/208x300" />
-    </a>
+      <div class="product-images">
+        <a href="https://source.unsplash.com/xulIYVIbYIc/832x1200" data-fancybox="quick-view-1" data-type="image"></a>
 
-    <div class="product-images">
-      <a href="https://source.unsplash.com/xulIYVIbYIc/832x1200" data-fancybox="quick-view-1" data-type="image"></a>
+        <a href="https://source.unsplash.com/-oSpTrUtvfY/832x1200" data-fancybox="quick-view-1" data-type="image"></a>
+      </div>
+        <div class="product-form">
+          <h3>Cat pictures</h3>
+          <p>
+            Discover cat pictures that fit for your visual content needs.
+          </p>
 
-      <a href="https://source.unsplash.com/-oSpTrUtvfY/832x1200" data-fancybox="quick-view-1" data-type="image"></a>
-    </div>
-    <div class="product-form">
-      <h3>Cat pictures</h3>
-      <p>
-        Discover cat pictures that fit for your visual content needs.
-      </p>
+          <p>
+            These cat photos feature cats of all sizes, including baby kittens. You'll not only find cat images of common house felines but also rarer breeds.
+          </p>
+          <p><button class="btn" data-fancybox-close>Add to cart</button></p>
+        </div>
+      </div>
 
-      <p>
-        These cat photos feature cats of all sizes, including baby kittens. You'll not only find cat images of common house felines but also rarer breeds.
-      </p>
-      <p><button class="btn" data-fancybox-close>Add to cart</button></p>
-    </div>
-  </div>
+      <div class="product">
+          <a href="https://source.unsplash.com/mx0DEnfYxic/832x1200" data-fancybox="quick-view-2" data-type="image">
+            <img src="https://source.unsplash.com/mx0DEnfYxic/208x300" />
+          </a>
 
-  <div class="product">
-    <a href="https://source.unsplash.com/mx0DEnfYxic/832x1200" data-fancybox="quick-view-2" data-type="image">
-      <img src="https://source.unsplash.com/mx0DEnfYxic/208x300" />
-    </a>
+        <div class="product-images">
+          <a href="https://source.unsplash.com/AbNO2iejoXA/832x1200" data-fancybox="quick-view-2" data-type="image"></a>
 
-    <div class="product-images">
-      <a href="https://source.unsplash.com/AbNO2iejoXA/832x1200" data-fancybox="quick-view-2" data-type="image"></a>
-
-      <a href="https://source.unsplash.com/CdK2eYhWfQ0/832x1200" data-fancybox="quick-view-2" data-type="image"></a>
-    </div>
-    <div class="product-form">
-      <h3>Dog pictures</h3>
-      <p>
-        Find dog photos featuring all different kinds of canines and man's best friend. Some of the many breeds showcased in the dog pictures below include bull dogs, huskies, labradors, poodles, and retrievers.
-      </p>
-      <p><button class="btn" data-fancybox-close>Add to cart</button></p>
-    </div>
+          <a href="https://source.unsplash.com/CdK2eYhWfQ0/832x1200" data-fancybox="quick-view-2" data-type="image"></a>
+        </div>
+        <div class="product-form">
+          <h3>Dog pictures</h3>
+          <p>
+            Find dog photos featuring all different kinds of canines and man's best friend. Some of the many breeds showcased in the dog pictures below include bull dogs, huskies, labradors, poodles, and retrievers.
+          </p>
+          <p><button class="btn" data-fancybox-close>Add to cart</button></p>
+        </div>
+      </div>
   </div>
 </section>
 
@@ -399,53 +401,6 @@ ga('send', 'pageview');
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script type="text/javascript" src="dist/simple-lightbox.js"></script>
-    <script>
-    	$(function(){
-    		var $gallery = $('.gallery a').simpleLightbox();
-
-    		$gallery.on('show.simplelightbox', function(){
-    			console.log('Requested for showing');
-    		})
-    		.on('shown.simplelightbox', function(){
-    			console.log('Shown');
-    		})
-    		.on('close.simplelightbox', function(){
-    			console.log('Requested for closing');
-    		})
-    		.on('closed.simplelightbox', function(){
-    			console.log('Closed');
-    		})
-    		.on('change.simplelightbox', function(){
-    			console.log('Requested for change');
-    		})
-    		.on('next.simplelightbox', function(){
-    			console.log('Requested for next');
-    		})
-    		.on('prev.simplelightbox', function(){
-    			console.log('Requested for prev');
-    		})
-    		.on('nextImageLoaded.simplelightbox', function(){
-    			console.log('Next image loaded');
-    		})
-    		.on('prevImageLoaded.simplelightbox', function(){
-    			console.log('Prev image loaded');
-    		})
-    		.on('changed.simplelightbox', function(){
-    			console.log('Image changed');
-    		})
-    		.on('nextDone.simplelightbox', function(){
-    			console.log('Image changed to next');
-    		})
-    		.on('prevDone.simplelightbox', function(){
-    			console.log('Image changed to prev');
-    		})
-    		.on('error.simplelightbox', function(e){
-    			console.log('No image found, go to the next/prev');
-    			console.log(e);
-    		});
-    	});
-    </script>
 
 
         <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
