@@ -16,7 +16,6 @@
     <!-- <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/flexslider.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/animate.min.css">
@@ -34,8 +33,8 @@
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 
-
-
+    <link rel="stylesheet" href="dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="dist/jquery.fancybox.css">
 
 </head>
 <body>
@@ -119,6 +118,21 @@
           </p>
           <p><button class="btn" data-fancybox-close>Add to cart</button></p>
         </div>
+      </div>
+      <div class="card">
+        <a data-fancybox="html5-video" href="#myVideo">
+            <img class="card-img-top img-fluid" src="https://www.html5rocks.com/en/tutorials/video/basics/poster.png">
+        </a>
+        <div class="card-body">
+            <p class="card-text">Hidden HTML5 video element</p>
+        </div>
+        <video controls="" id="myVideo" style="display: none;" class="fancybox-video" width="640" height="320">
+            <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4">
+            <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.webm" type="video/webm">
+            <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.ogv" type="video/ogg">
+            Your browser doesn't support HTML5 video tag.
+        </video>
+
       </div>
   </div>
 </section>
@@ -381,13 +395,15 @@
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/retina.min.js"></script>
     <script src="js/modernizr.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script> new WOW().init(); </script>
     <script src="js/main.js"></script>
+
+    <script src="dist/jquery.fancybox.js"></script>
+    <script src="dist/jquery.fancybox.min.js"></script>
 
 
     <script>
@@ -404,9 +420,6 @@ ga('send', 'pageview');
 
 
         <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
         <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
