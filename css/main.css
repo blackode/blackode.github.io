@@ -827,7 +827,14 @@ ul li {
 .icon-dribbble:before {
   content: "\e063"; }
 
+  /*
 
+  Step 1
+  ======
+
+  Style your page (the product list)
+
+  */
 
   .product {
     float: left;
