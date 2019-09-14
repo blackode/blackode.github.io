@@ -1,0 +1,5 @@
+The purpose of this project is to study a real robot and apply the knowledge gained from
+this course to solve real life problems with the Alto Robot. The Alto Robot is a cleaning
+robot sold by the Ramsta Robotics Company. The robot uses a water jet to clean livestock
+buildings and containers.
+
