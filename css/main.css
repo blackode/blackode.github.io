@@ -261,14 +261,14 @@ ul li {
 	$Banner
 ========================================================================== */
 .banner {
-  background-image: url(../images/banner.jpg);
+/*  background-image: url(../images/banner.jpg);*/
   background-position: center top;
   background-repeat: no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
-  min-height: 750px; }
+  min-height: 250px; }
 
 .banner-text {
   padding-top: 25%; }
